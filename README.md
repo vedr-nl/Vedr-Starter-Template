@@ -14,5 +14,5 @@ De main branch zal worden gebruikt voor production deployment.
 De development branch dient voor development deployment.
 
 ## Project runnen
-1. npm install
-2. npm run dev
+    1. npm install
+    2. npm run dev
