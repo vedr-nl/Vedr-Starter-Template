@@ -4,10 +4,6 @@ export default function Hero({
     title,
     slogan,
     image
-}: {
-    title: string
-    slogan: string
-    image: Image
 }) {
     return (
         <div>

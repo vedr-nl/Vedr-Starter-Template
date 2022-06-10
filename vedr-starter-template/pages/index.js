@@ -1,3 +1,4 @@
+import ContactForm from "../sections/contactForm";
 import Hero from "../sections/hero";
 import { getEntries } from '../services/contentful';
 
@@ -14,9 +15,7 @@ export async function getStaticProps({}) {
 }
 
 
-export default function Home(
-  {hero}:any
-  ) {
+export default function Home({hero}) {
   return (
     <div>
       <Hero 
@@ -24,6 +23,7 @@ export default function Home(
         slogan={hero[0].fields.slogan}
         image={hero[0].fields.image.fields.file}
       />
+      <ContactForm/>
     </div>
   )
 }
