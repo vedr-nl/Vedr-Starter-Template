@@ -40,7 +40,7 @@ export default function Navbar() {
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     {NAV_ITEMS.map((navItem) => (
-                        <a href={navItem.href} className="text-black-300 hover:text-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium">{navItem.label}</a>
+                        <a href={navItem.href} className="text-black-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">{navItem.label}</a>
                     ))}
                   </div>
                 </div>
