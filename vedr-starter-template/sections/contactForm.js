@@ -39,7 +39,7 @@ export default function ContactForm() {
     */
   <form onSubmit={handleSubmit(onSubmitForm)} className="w-full max-w-lg">
       <div className="flex flex-wrap -mx-3 mb-6">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
+      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-name">
         Naam
       </label>
       <input 

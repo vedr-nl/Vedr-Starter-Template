@@ -19,7 +19,6 @@ export async function getStaticProps({}) {
 export default function Home({hero}) {
   return (
     <div>
-      <Navbar/>
       <Hero 
         title={hero[0].fields.title}
         slogan={hero[0].fields.slogan}

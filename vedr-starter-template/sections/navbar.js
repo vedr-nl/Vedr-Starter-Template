@@ -31,7 +31,7 @@ export default function Navbar() {
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <img
-                    className="h-8 w-8"
+                    className="h-16 w-16"
                     src="vedr-logo.png"
                     alt="Workflow"
                   />
