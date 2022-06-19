@@ -1,4 +1,5 @@
 # Vedr-Starter-Template
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2439f46d-a39e-4b18-a106-7a8530336948/deploy-status)](https://app.netlify.com/sites/vedr-template/deploys)
 
 ## Setup nieuw project
 1. Maak een nieuwe repo aan in https://github.com/vedr-nl/ (maak deze private)
@@ -16,3 +17,20 @@ De development branch dient voor development deployment.
 ## Project runnen
     1. npm install
     2. npm run dev
+
+## Contentful
+    1. log in op https://contentful.com/
+    2. ga naar settings en kies API keys
+    3. kopieer space id en content delivery api in .env.local file
+
+## Netlify
+    1. log in op https://netlify.com/
+    2. link github account
+    3. configureer de deploy
+    4. configureer environment variables hetzelfde als de .env.local file
+
+
+## Production deploy
+- [ ] Verander head.js
+- [ ] Verander contact formulier variabelen in .env.local
+- [ ] Deploy op production branch
