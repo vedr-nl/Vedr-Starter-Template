@@ -25,8 +25,8 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="bg-white-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav>
+        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <img className="h-16 w-16" src="vedr-logo.png" alt="Workflow" />
@@ -34,8 +34,9 @@ export default function Navbar() {
             {/* Navitems desktop */}
             <div className="hidden md:block">
               <div className="ml-10 flex-initial items-baseline space-x-4">
-                {NAV_ITEMS.map((navItem) => (
+                {NAV_ITEMS.map((navItem, key) => (
                   <a
+                    key={key}
                     href={navItem.href}
                     className="text-black-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -104,8 +105,9 @@ export default function Navbar() {
             /* Navitems desktop */
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                {NAV_ITEMS.map((navItem) => (
+                {NAV_ITEMS.map((navItem, key) => (
                   <a
+                    key={key}
                     href={navItem.href}
                     className="text-black-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >

@@ -1,14 +1,18 @@
 export default function Hero({ title, slogan, image }) {
   return (
-    <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
       {/* <!-- Replace with your content --> */}
-      <div className="px-4 py-6 sm:px-0">
-        <div>
+      <div className="flex">
+        <div className="flex-initial w-2/4 pt-10">
           <h1>{title}</h1>
           <p>{slogan}</p>
-          <img src={image.url} alt={image.title}></img>
+        </div>
+
+        <div className="flex-initial w-2/4">
+          <img src={image.url} alt={image.title} className="w-96"></img>
         </div>
       </div>
+
       {/* <!-- /End replace --> */}
     </div>
   );

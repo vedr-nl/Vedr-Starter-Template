@@ -16,6 +16,6 @@
     "incremental": true,
     "noImplicitAny": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/scrollToTop.tsx", "pages/index.js", "sections/hero.js", "sections/contactForm.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/scrollToTop.tsx", "pages/index.js", "sections/hero.js", "components/contactForm.js"],
   "exclude": ["node_modules"]
 }

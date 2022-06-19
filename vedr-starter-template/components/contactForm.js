@@ -42,27 +42,27 @@ export default function ContactForm() {
      * Configure mailserver in api -> contact.js
      * Configure email credentials in .env
      */
-    <form onSubmit={handleSubmit(onSubmitForm)} className="w-full max-w-lg">
-      <div className="flex flex-wrap -mx-3 mb-6">
-        <label
-          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-          htmlFor="grid-name"
-        >
-          Naam
-        </label>
-        <input
-          className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-          id="grid-name"
-          type="text"
-          placeholder="John Doe"
-          {...register("name", { required: "Vul je naam in" })}
-        />
-        <p className="text-gray-600 text-xs italic">
-          <ErrorMessage errors={errors} name="name" />
-        </p>
-      </div>
-      <div className="flex flex-wrap -mx-3 mb-6">
-        <div className="w-full px-3">
+    <div className="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
+      <form onSubmit={handleSubmit(onSubmitForm)} className="w-full max-w-lg">
+        <div className="flex flex-wrap -mx-3 mb-6">
+          <label
+            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="grid-name"
+          >
+            Naam
+          </label>
+          <input
+            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            id="grid-name"
+            type="text"
+            placeholder="John Doe"
+            {...register("name", { required: "Vul je naam in" })}
+          />
+          <p className="text-gray-600 text-xs italic">
+            <ErrorMessage errors={errors} name="name" />
+          </p>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-6">
           <label
             className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="grid-password"
@@ -79,9 +79,7 @@ export default function ContactForm() {
             <ErrorMessage errors={errors} name="email" />
           </p>
         </div>
-      </div>
-      <div className="flex flex-wrap -mx-3 mb-6">
-        <div className="w-full px-3">
+        <div className="flex flex-wrap -mx-3 mb-6">
           <label
             className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="grid-password"
@@ -103,18 +101,18 @@ export default function ContactForm() {
             <ErrorMessage errors={errors} name="message" />
           </p>
         </div>
-      </div>
-      <div className="md:flex md:items-center">
-        <div className="md:w-1/3">
-          <button
-            className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-            type="submit"
-          >
-            Verstuur
-          </button>
+        <div className="md:flex md:items-center">
+          <div className="md:w-1/3">
+            <button
+              className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              type="submit"
+            >
+              Verstuur
+            </button>
+          </div>
+          <div className="md:w-2/3"></div>
         </div>
-        <div className="md:w-2/3"></div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 }
