@@ -1,4 +1,5 @@
 module.exports = {
+  purge: ["./src/components/**/*.{js,jsx}", "./pages/index.js"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -7,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary':'#4169E1',
+        primary: "#4169E1",
       },
       container: {
-        padding: '5rem',
-      }
+        padding: "5rem",
+      },
     },
   },
   plugins: [],
-}
+};
