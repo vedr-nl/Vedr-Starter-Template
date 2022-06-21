@@ -1,27 +1,28 @@
 ## Mappen structuur
 
-    Components
+### Components
     Herbruikbare componenten die je in een pagina kan plaatsen
 
-    Pages
+### Pages
     Hierin maak je aparte pagina's die automatisch bereikbaar zijn door '/pagina_naam'
     - _app is om de website op te starten
     - index.js is de home page
 
-    Public
+### Public
     Plaats hierin images, pdf's, etc.
 
-    Sections
+### Sections
     Hierin maak je secties die je in een pagina, zoals index.js laad
 
-    Services
+### Services
     Logica voor bijvoorbeeld api's plaats je onder services
 
-    Styles
+### Styles
     Hier staat de css in globals.css
 
-    Types
+### Types
     Hier plaats je zelf gemaakte herbruikbare import interfaces
 
+### Files
     tailwind.config.js
-    Deze file bepaalt de huisstijl van de site
+    -> Deze file bepaalt de huisstijl van de site
