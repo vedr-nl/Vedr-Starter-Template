@@ -44,7 +44,7 @@ export default function ContactForm() {
      */
     <div className="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
       <form onSubmit={handleSubmit(onSubmitForm)} className="w-full max-w-lg">
-        <div className="flex flex-wrap -mx-3 mb-6">
+        <div className="flex flex-wrap mb-6">
           <label
             className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="grid-name"
@@ -62,7 +62,7 @@ export default function ContactForm() {
             <ErrorMessage errors={errors} name="name" />
           </p>
         </div>
-        <div className="flex flex-wrap -mx-3 mb-6">
+        <div className="flex flex-wrap mb-6">
           <label
             className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="grid-password"
@@ -79,7 +79,7 @@ export default function ContactForm() {
             <ErrorMessage errors={errors} name="email" />
           </p>
         </div>
-        <div className="flex flex-wrap -mx-3 mb-6">
+        <div className="flex flex-wrap mb-6">
           <label
             className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="grid-password"
@@ -104,7 +104,7 @@ export default function ContactForm() {
         <div className="md:flex md:items-center">
           <div className="md:w-1/3">
             <button
-              className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-20 shadow bg-primary hover:bg-secondary hover:text-black  focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               type="submit"
             >
               Verstuur

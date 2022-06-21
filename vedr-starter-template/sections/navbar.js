@@ -38,7 +38,7 @@ export default function Navbar() {
                   <a
                     key={key}
                     href={navItem.href}
-                    className="text-black-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                    className="transition fade-in-out text-black-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                   >
                     {navItem.label}
                   </a>
