@@ -38,3 +38,4 @@
 ### Extra's
 
     - Gebruik className ipv class
+    - Gebruik geen <a> maar <Link>
