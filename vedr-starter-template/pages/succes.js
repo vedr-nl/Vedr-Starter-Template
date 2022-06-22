@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Succes() {
   return (
     <div className="bg-white p-6  md:mx-auto">
@@ -19,12 +21,12 @@ export default function Succes() {
           beantwoorden.
         </p>
         <div className="py-10 text-center">
-          <a
+          <Link
             href="/"
             className="transition ease-in-out px-12 bg-primary hover:bg-secondary text-white font-semibold py-3"
           >
             Terug naar home
-          </a>
+          </Link>
         </div>
       </div>
     </div>

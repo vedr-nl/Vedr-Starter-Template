@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,13 +36,13 @@ export default function Navbar() {
             <div className="hidden md:block">
               <div className="ml-10 flex-initial items-baseline space-x-4">
                 {NAV_ITEMS.map((navItem, key) => (
-                  <a
+                  <Link
                     key={key}
                     href={navItem.href}
                     className="transition fade-in-out text-black-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                   >
                     {navItem.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -106,13 +107,13 @@ export default function Navbar() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {NAV_ITEMS.map((navItem, key) => (
-                  <a
+                  <Link
                     key={key}
                     href={navItem.href}
                     className="text-black-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     {navItem.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
