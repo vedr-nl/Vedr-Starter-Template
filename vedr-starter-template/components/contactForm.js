@@ -111,13 +111,13 @@ export default function ContactForm() {
               className="transition ease-in-out hover:-translate-y-1 hover:scale-20 shadow bg-primary hover:bg-secondary hover:text-black  focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               type="submit"
             >
-              <div class="flex">
+              <div className="flex">
                 <div>Verstuur</div>
                 {isSending ? (
                   <div>
                     <svg
                       role="status"
-                      class="w-4 h-4 ml-2 mt-1 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                      className="w-4 h-4 ml-2 mt-1 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                       viewBox="0 0 100 101"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
