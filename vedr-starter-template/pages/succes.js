@@ -21,11 +21,10 @@ export default function Succes() {
           beantwoorden.
         </p>
         <div className="py-10 text-center">
-          <Link
-            href="/"
-            className="transition ease-in-out px-12 bg-primary hover:bg-secondary text-white font-semibold py-3"
-          >
-            Terug naar home
+          <Link href="/">
+            <p className="transition ease-in-out px-12 bg-primary hover:bg-secondary text-white font-semibold py-3 w-64 m-auto rounded">
+              Terug naar home
+            </p>
           </Link>
         </div>
       </div>
