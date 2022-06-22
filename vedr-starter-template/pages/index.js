@@ -1,6 +1,8 @@
 import Head from "../components/head";
 import Hero from "../sections/hero";
 import Contact from "../sections/contact";
+import Footer from "../sections/footer";
+
 import { getEntries } from "../services/contentful";
 
 // Hero props
@@ -25,6 +27,7 @@ export default function Home({ hero }) {
         image={hero[0].fields.image.fields.file}
       />
       <Contact />
+      <Footer />
     </div>
   );
 }

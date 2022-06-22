@@ -13,7 +13,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#4169E1",
-        secondary: "#ffd000",
+        secondary: "#11286e",
+        tertiary: "#ffd000",
       },
       container: {
         padding: "5rem",

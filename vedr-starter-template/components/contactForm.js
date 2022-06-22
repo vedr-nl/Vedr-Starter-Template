@@ -108,7 +108,7 @@ export default function ContactForm() {
         <div className="md:flex md:items-center">
           <div className="md:w-1/3">
             <button
-              className="transition ease-in-out hover:-translate-y-1 hover:scale-20 shadow bg-primary hover:bg-secondary hover:text-black  focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              className="transition ease-in-out hover:-translate-y-1 hover:scale-20 shadow bg-primary hover:bg-secondary focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               type="submit"
             >
               <div className="flex">
